@@ -3,8 +3,6 @@
 This guide explains how to set up a Bitcoin and a Lightning node on a VPS (Virtual Private Server), 
 but it should also work on a Raspberry Pi or any other Ubuntu Linux installation.
 
-![image](assets/diagram.png)
-
 I did this project, because I wanted to get rid of my Raspberry Pi at home. It's shaky hardware and 
 I encountered quite some fails due to errors on the hard disk resulting in a broken blockchain, so I had 
 to download everything again - which can take several weeks, especially if you do it via Tor. Also, I wasn't
@@ -43,7 +41,7 @@ To connect via WireGuard, you need the WireGuard app on your phone and on your w
 
 # Target System
 
-<image>
+![image](assets/diagram.png)
 
 # Installation
 
