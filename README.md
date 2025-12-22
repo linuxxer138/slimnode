@@ -3,7 +3,7 @@
 This guide explains how to set up a Bitcoin and a Lightning node on a VPS (Virtual Private Server), 
 but it should also work on a Raspberry Pi or any other Ubuntu Linux installation.
 
-![image](assets/overview.png)
+![image](assets/diagram.png)
 
 I did this project, because I wanted to get rid of my Raspberry Pi at home. It's shaky hardware and 
 I encountered quite some fails due to errors on the hard disk resulting in a broken blockchain, so I had 
