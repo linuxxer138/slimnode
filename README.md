@@ -88,9 +88,9 @@ tee /etc/profile.d/aliases.sh <<EOF
 alias nodelogs="multitail /home/bitcoin/.bitcoin/debug.log /home/bitcoin/.lightning/bitcoin/cl.log /home/bitcoin/.lnd/logs/bitcoin/mainnet/lnd.log"
 EOF
 
-sudo -u bitcoin sh -c "wget https://bitcoincore.org/bin/bitcoin-core-${BITCOIND_VERSION}/bitcoin-${BITCOIND_VERSION}-x86_64-linux-gnu.tar.gz -P ~"
-sudo -u bitcoin sh -c "wget https://bitcoincore.org/bin/bitcoin-core-${BITCOIND_VERSION}/SHA256SUMS -P ~"
-sudo -u bitcoin sh -c "wget https://bitcoincore.org/bin/bitcoin-core-${BITCOIND_VERSION}/SHA256SUMS.asc -P ~"
+sudo -u bitcoin sh -c "wget https://bitcoin.org/bin/bitcoin-core-${BITCOIND_VERSION}/bitcoin-${BITCOIND_VERSION}-x86_64-linux-gnu.tar.gz -P ~"
+sudo -u bitcoin sh -c "wget https://bitcoin.org/bin/bitcoin-core-${BITCOIND_VERSION}/SHA256SUMS -P ~"
+sudo -u bitcoin sh -c "wget https://bitcoin.org/bin/bitcoin-core-${BITCOIND_VERSION}/SHA256SUMS.asc -P ~"
 sudo -u bitcoin sh -c "cd && sha256sum --ignore-missing --check ~/SHA256SUMS"
 sudo -u bitcoin sh -c 'curl -s "https://api.github.com/repositories/355107265/contents/builder-keys" | grep download_url | grep -oE "https://[a-zA-Z0-9./-]+" | while read url; do curl -s "$url" | gpg --import; done'
 sudo -u bitcoin sh -c "gpg --verify ~/SHA256SUMS.asc"
