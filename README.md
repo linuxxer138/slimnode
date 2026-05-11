@@ -3,7 +3,7 @@
 This guide explains how to set up a Bitcoin and a Lightning node on a VPS (Virtual Private Server), 
 but it should also work on a Raspberry Pi or any other Ubuntu Linux installation.
 
-A (german) tutorial video how to install your node can be found on YouTube:
+A (german) tutorial video on how to install your node step by step can be found on YouTube:
 [![Tutorial Video](https://img.youtube.com/vi/0aCzCE4nImc/0.jpg)](https://www.youtube.com/watch?v=0aCzCE4nImc)
 
 
@@ -28,7 +28,7 @@ You can also run all sections in one file as script:
 curl -LsSf https://raw.githubusercontent.com/linuxxer138/slimnode/main/install_node.sh | bash
 ```
 
-
+The compilation process of CLN might take a bit longer (~30 mins) and interrupt your network connection. This also stops the installation. You should consider opening a ```screen``` to run the steps/script in.
 
 The following components will be installed:
 
