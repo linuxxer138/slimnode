@@ -3,7 +3,7 @@
 This guide explains how to set up a Bitcoin and a Lightning node on a VPS (Virtual Private Server), 
 but it should also work on a Raspberry Pi or any other Ubuntu Linux installation.
 
-A (german) tutrial video how to install your node can be found on YouTube:
+A (german) tutorial video how to install your node can be found on YouTube:
 [![Tutorial Video](https://img.youtube.com/vi/0aCzCE4nImc/0.jpg)](https://www.youtube.com/watch?v=0aCzCE4nImc)
 
 
@@ -61,7 +61,7 @@ During the process, check if the package signatures of bitcoind are ok.
 ```console
 PUBLIC_IP=`ip addr show eth0 | grep 'inet ' | awk '{print $2}' | cut -f1 -d'/'`
 BITCOIND_VERSION="28.1"
-LND_VERSION="v0.20.0-beta"
+LND_VERSION="v0.20.1-beta"
 CLN_VERSION="v25.09.3"
 BITCOIND_PW=`cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 50 | head -n 1`
 BITCOIN_USER_PW=`cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 50 | head -n 1`
