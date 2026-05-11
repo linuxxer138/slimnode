@@ -22,13 +22,8 @@ you cut out the noise (unless you open a vast amount of channels).
 
 Originally, I wrote a script to make the installation process more convenient, but in the end, writing the script ended up being more effort than the actual installation itself. Also I didn't want to create another node distribution (that nobody uses), That’s why I  am listing the plain shell commands necessary for the installation, to be easily copied and pasted into a terminal window.
 
-You can also run all sections in one file as script:
 
-```
-curl -LsSf https://raw.githubusercontent.com/linuxxer138/slimnode/main/install_node.sh | bash
-```
-
-The compilation process of CLN might take a bit longer (~30 mins) and interrupt your network connection. This also stops the installation. You should consider opening a ```screen``` to run the steps/script in.
+The compilation process of CLN might take a bit longer (~30 mins) and interrupt your network connection. This also stops the installation. You should consider opening a ```screen``` to run the commands in.
 
 The following components will be installed:
 
