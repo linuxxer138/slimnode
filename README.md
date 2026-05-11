@@ -49,7 +49,8 @@ enough for our purpose. Look for specs like these:
 is mandatory, this guide was only tested with this version. Also, it is assumed the primary network
 device is ```eth0```.
 
-To connect via WireGuard, you need the WireGuard app on your phone and on your workstation.
+To connect via WireGuard, you need the WireGuard app on your smart phone and on your workstation.
+To connect via your smart phone to your node, you need the ZEUS app.
 
 # Target System
 
