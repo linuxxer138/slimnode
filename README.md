@@ -146,9 +146,6 @@ systemctl enable bitcoind.service
 sudo -u bitcoin sh -c "mkdir -p ~/.lightning/bitcoin/backups/"
 sudo -u bitcoin sh -c "git clone https://github.com/ElementsProject/lightning.git ~/lightning && cd ~/lightning && git checkout ${CLN_VERSION}"
 sudo -u bitcoin sh -c "curl -LsSf https://astral.sh/uv/install.sh | sh"
-
-
-#sudo -u bitcoin sh -c "cd ~/lightning && poetry install && ./configure && poetry run make -j`nproc --all` && echo ${BITCOIN_USER_PW} | sudo -S make install"
 sudo -u bitcoin sh -c "export PATH=/home/bitcoin/.local/bin:${PATH} && cd ~/lightning && uv sync --all-extras --all-groups --frozen && ./configure && sed -i '/version = 4/c\version = 3' Cargo.lock && RUST_PROFILE=release uv run make  && echo ${BITCOIN_USER_PW} | sudo -S RUST_PROFILE=release make install"
 PIP_OPTIONS="--break-system-packages"
 sudo -u bitcoin sh -c "pip3 install --user pyln-client websockets flask-cors flask-restx pyln-client flask-socketio gevent gevent-websocket ${PIP_OPTIONS}"
